@@ -57,4 +57,7 @@ def root():
 def get_map_data():
     return "Hello, World!"
 
-app.run(debug=True, host='0.0.0.0', port=8080)
+
+if __name__ == '__main__':
+    port = int(os.getenv('PORT', 4000))  # Default to 4000 if no PORT environment variable is set
+    app.run(debug=True, host='0.0.0.0', port=port)
