@@ -59,5 +59,5 @@ def get_map_data():
 
 
 if __name__ == '__main__':
-    port = int(os.getenv('PORT', 4000))  # Default to 4000 if no PORT environment variable is set
+    port = int(os.getenv('PORT', 5000))  # Default to 5000 if no PORT environment variable is set
     app.run(debug=True, host='0.0.0.0', port=port)
